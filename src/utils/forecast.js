@@ -14,7 +14,8 @@ const forecast = (latitude, longitude, callback) => {
     } else {
       callback(
         undefined,
-        `${body.current.weather_descriptions[0]}. It is currently ${body.current.temperature} degress out. It feels like ${body.current.feelslike} degrees out.`
+        `${body.current.weather_descriptions[0]}. It is currently ${body.current.temperature}° out 🌡️. It feels like ${body.current.feelslike}° out 🥵.
+         Wind is flowing in ${body.current.wind_dir} direction 🧭 with a speed of ${body.current.wind_speed} 💨. There is ${body.current.cloudcover} cloud cover ⛅ and a ${body.current.humidity} humidity 🌡.`
       );
     }
   });
